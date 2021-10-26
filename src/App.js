@@ -1,13 +1,14 @@
 
 import './App.css';
-import { Header,Input } from './components';
+import { Header,Todo } from './components';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hiiiii</h1>
+      
      <Header/>
-     <Input/>
+     <Todo/>
+    
     </div>
   );
 }

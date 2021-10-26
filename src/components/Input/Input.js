@@ -2,13 +2,22 @@ import React,{useState} from "react";
 import style from './Input.module.css';
 
 
-const Input=()=>{
+
+
+const Input=({addTask})=>{
 const[value,setVal]=useState("");
+const handleSubmit=(event)=>{
+  event.preventDefault();
+     addTask(value)
+     setVal("")
+   
+}
     return(
-        <div className={style.InputField}>
+      <form className={style.InputField} onSubmit={handleSubmit}>
       <input className={style.input} value={value} type='text' onChange={(e)=>setVal(e.target.value)} />
-      <button className={style.Button}>Enter</button>
-      </div>
+      <button className={style.Button} type='submit'>Enter</button>
+    
+      </form>
     )
 }
 export default Input;

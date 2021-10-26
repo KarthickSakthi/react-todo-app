@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@300;500&family=Zen+Kurenaido&display=swap');
+.TaskContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+.Taskitem{
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0.5%;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
