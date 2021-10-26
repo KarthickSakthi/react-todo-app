@@ -40,8 +40,27 @@
 }
 .Pendings{
     color: white;
-    
+    font-size: 24px;
+    font-family: 'Zen Kurenaido', sans-serif;
 }
 .Taskitem:hover{
     background-color: rgb(204, 193, 35);
+}
+
+@media (max-width:480px){
+    .Taskitem{
+    
+        color: white;
+        text-align: center;
+        margin-bottom: 0.5%;
+        font-family: 'Zen Kurenaido', sans-serif;
+        padding: 2px;
+        font-size: 20px;
+        font-weight: 700;
+        border:2px solid white;
+        margin-left: 7%;
+        margin-right: 7%;
+        border-radius: 5px;
+        
+    }
 }

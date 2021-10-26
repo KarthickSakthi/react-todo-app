@@ -14,7 +14,7 @@ const handleSubmit=(event)=>{
 }
     return(
       <form className={style.InputField} onSubmit={handleSubmit}>
-      <input required className={style.input} value={value} type='text' onChange={(e)=>setVal(e.target.value)} />
+      <input required placeholder='Enter Your Task' className={style.input} value={value} type='text' onChange={(e)=>setVal(e.target.value)} />
       <button className={style.Button} type='submit'>Enter</button>
     
       </form>

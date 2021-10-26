@@ -30,10 +30,16 @@ const DoneTask=index=>{
   tempTaskArr[index].isCompleted=true
    setTask(tempTaskArr)
 }
-
+const Pendings=()=>{
+  const tempTaskArr=[...task]
+  const Arr= tempTaskArr.filter((e)=>(e.isCompleted==false))
+  return Arr.length
+}
   return(
-      <div>
+      <div style={{textAlign:'center'}}>
+          <span className={style.Pendings}><b>Pendings({Pendings()})</b></span>
      <div>
+     
           <Input addTask={addTask}/>
       </div>
       <div >
